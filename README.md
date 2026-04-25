@@ -281,12 +281,12 @@ All AI-generated suggestions were reviewed, tested, and modified by the author. 
 - Adapting reflection content to reflect personal learning experiences
 ________________________________________
 ## 👤 Author
--	Name: [Your Full Name]
--	Student ID: [Your Student ID]
--	Program: BA Accounting / BSc Economics and Finance – Year 2
--	Course: ACC102 – Python for Business Analytics
--	Institution: [Your University]
--	Submission Date: [Submission Date]
+-	Name: Jiayi Chen
+-	Student ID: 2468729
+-	Program: BA Accounting – Year 2
+-	Course: ACC102
+-	Institution: Xi'an Jiaotong-Liverpool University
+-	Submission Date: 4.26
 ________________________________________
 ## 📜 License
 This project is submitted as part of an academic assignment and is licensed under the MIT License. See the LICENSE file for details.
