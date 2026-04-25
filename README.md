@@ -188,7 +188,8 @@ ________________________________________
 <img width="4168" height="1192" alt="Image" src="https://github.com/user-attachments/assets/d085c0cd-4408-401c-8cf3-446c8f14d5c2" />
 
 ### Multi-dimensional Radar Chart (2025)
-<img width="2848" height="2361" alt="Image" src="https://github.com/user-attachments/assets/5bde345a-e1eb-44f5-b551-b979b6488cd0" />
+<img width="2848" height="2361" alt="Image" src="https://github.com/user-attachments/assets/f09580af-a5cb-4291-9dc3-e7b2d0ccb0c3" />
+
 ### Trend Analysis (Walmart)
 https://images/trend_wmt.png
 Summary Table (2024)
