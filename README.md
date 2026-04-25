@@ -41,7 +41,7 @@ The tool retrieves **real financial statement data** from the **WRDS Compustat N
 
 ## 📁 Repository Structure
 us-retail-financial-analyzer
-│
+
 
 ├── README.md # Project documentation (this file)
 
@@ -49,11 +49,11 @@ us-retail-financial-analyzer
 
 ├── .gitignore # Git ignore rules
 
-│
+
 
 ├── financial_analysis.ipynb # Main Jupyter Notebook (full analysis)
 
-│
+
 
 ├── src/ # Modular Python scripts
 
@@ -63,7 +63,7 @@ us-retail-financial-analyzer
 
 │ └── visualizer.py # Visualization module
 
-│
+
 
 ├── images/ # Output visualizations
 
@@ -77,13 +77,13 @@ us-retail-financial-analyzer
 
 │ └── trend_kr.png # Kroger trend analysis
 
-│
+
 
 ├── data/ # Sample output data
 
 │ └── financial_ratios_2024.csv # Calculated ratios for latest year
 
-│
+
 
 └── video/
 
@@ -119,7 +119,7 @@ matplotlib>=3.4.0
 
 seaborn>=0.11.0
 
-jupyter>=1.0.0
+jupyter>=7.4.5
 
 ### Step 3: Configure WRDS Connection
 
@@ -202,83 +202,98 @@ ________________________________________
 |Costco|	13.49%|	2.9%|	31.19%| 0.97|	66.17%|	11.8x|
 |Kroger|	22.24%|	1.44%|	18.63%|	0.81|	77.03%|	16.42x|
 ________________________________________
-🔍 Key Insights（更改具体数值）
+## 🔍 Key Insights
 Based on the 2020–2024 analysis:
-1.	Costco demonstrates the strongest overall financial health:
-o	Highest ROE (≈25%) driven by efficient asset utilization
-o	Most conservative capital structure (lowest debt-to-assets)
-o	Superior inventory turnover (≈12x) reflecting membership model efficiency
-2.	Walmart shows stable and consistent performance:
-o	Solid gross margins (≈24-25%)
-o	Steady revenue growth (≈3-5% annually)
-o	Moderate leverage with improving trends
-3.	Kroger exhibits higher financial risk:
-o	Highest debt-to-assets ratio (≈78%), exceeding industry norms
-o	Lower current ratio indicating potential liquidity pressure
-o	Thinner net margins compared to peers
+### 1.	Costco demonstrates the strongest overall financial health:
+-	Highest ROE (≈25.93%) driven by efficient asset utilization
+-	Most conservative capital structure (lowest debt-to-assets)
+-	Superior inventory turnover (≈16.42x) reflecting membership model efficiency
+### 2.	Walmart shows stable and consistent performance:
+-	Solid gross margins (≈24-25%)
+-	Steady revenue growth (≈3-5% annually)
+-	Moderate leverage with improving trends
+### 3.	Kroger exhibits higher financial risk:
+-	Highest debt-to-assets ratio (≈77%), exceeding industry norms
+-	Lower current ratio indicating potential liquidity pressure
+-	Thinner net margins compared to peers
 ________________________________________
-🛠️ Technical Implementation
-Data Source
-•	WRDS Compustat North America – Fundamentals Annual (funda table)
-•	Data accessed on: [Insert your access date]
-Key Compustat Fields Used
-Field	Description
-tic	Ticker symbol
-fyear	Fiscal year
-at	Assets – Total
-lt	Liabilities – Total
-ceq	Common Equity – Total
-sale	Sales/Turnover (Revenue)
-ni	Net Income
-Code Architecture
-•	Modular Design: Separated into data loading, calculation, and visualization modules
-•	Error Handling: Graceful fallback for missing data fields
-•	Reproducibility: Fixed random seed for consistent outputs where applicable
+## 🛠️ Technical Implementation
+### Data Source
+-	WRDS Compustat North America – Fundamentals Annual (funda table)
+-	Data accessed on: 4.25
+### Key Compustat Fields Used
+|Field|	Description|
+|:---|:---|
+|tic|	Ticker symbol|
+|fyear|	Fiscal year|
+|at|	Assets – Total|
+|lt|	Liabilities – Total|
+|ceq|	Common Equity – Total|
+|sale|	Sales/Turnover (Revenue)|
+|ni|	Net Income|
+### Code Architecture
+•	**Modular Design**: Separated into data loading, calculation, and visualization modules
+
+•	**Error Handling**: Graceful fallback for missing data fields
+
+•	**Reproducibility**: Fixed random seed for consistent outputs where applicable
 ________________________________________
-📝 Reflection (Summary)
-This project demonstrates the integration of Python programming with accounting domain knowledge to create a practical financial analysis tool. Key learning outcomes include:
-•	Connecting to professional financial databases (WRDS) via API
-•	Implementing financial ratio calculations programmatically
-•	Designing user-friendly visualizations for comparative analysis
-•	Structuring code as a reusable data product
-Limitations acknowledged:
-•	Analysis limited to three companies; industry-wide comparison would require broader sampling
-•	Does not account for macroeconomic factors or industry cycles
-•	Ratio weights in composite scoring are subjective
-Future improvements:
-•	Expand to full retail sector using SIC/NAICS codes
-•	Incorporate Altman Z-score for bankruptcy risk assessment
-•	Develop Streamlit web interface for interactive exploration
+## 📝 Reflection (Summary)
+### This project demonstrates the integration of Python programming with accounting domain knowledge to create a practical financial analysis tool. Key learning outcomes include:
+-	Connecting to professional financial databases (WRDS) via API
+-	Implementing financial ratio calculations programmatically
+-	Designing user-friendly visualizations for comparative analysis
+-	Structuring code as a reusable data product
+### Limitations acknowledged:
+-	Analysis limited to three companies; industry-wide comparison would require broader sampling
+-	Does not account for macroeconomic factors or industry cycles
+-	Ratio weights in composite scoring are subjective
+### Future improvements:
+-	Expand to full retail sector using SIC/NAICS codes
+-	Incorporate Altman Z-score for bankruptcy risk assessment
+-	Develop Streamlit web interface for interactive exploration
 ________________________________________
-📹 Demo Video
-A 1–3 minute demonstration video is available in the video/ folder and on YouTube:
-🔗 Watch Demo Video
-The video covers:
-•	Overview of the GitHub repository structure
-•	Running the Jupyter Notebook
-•	Key visualizations and insights
+## 📹 Demo Video
+A 1–3 minute demonstration video is available in the video/ folder
+**🔗 Watch Demo Video**
+**The video covers**:
+-	Overview of the GitHub repository structure
+-	Running the Jupyter Notebook
+-	Key visualizations and insights
 ________________________________________
-📄 AI Use Disclosure
+## 📄 AI Use Disclosure
+
 In accordance with the ACC102 assignment requirements, the following AI tools were used in the development of this project:
-Tool	Version	Access Date	Purpose
-DeepSeek	Web	2026-04-18	Assisted with WRDS SQL query syntax and code structure planning
-DeepSeek	Web	2026-04-19	Helped debug Jupyter Notebook display configuration
-All AI-generated suggestions were reviewed, tested, and modified by the author. The final code, analysis, interpretations, and documentation represent my own intellectual contribution and understanding.
+
+| Tool | Version | Access Date | Purpose |
+|:---|:---|:---|:---|
+| DeepSeek | Web | 2026-04-18 | Assisted with WRDS SQL query syntax, Compustat field mapping, and overall code structure planning |
+| DeepSeek | Web | 2026-04-19 | Helped debug Jupyter Notebook display issues and image saving configuration |
+| DeepSeek | Web | 2026-04-22 | Provided guidance on financial ratio calculation logic and data visualization design |
+| DeepSeek | Web | 2026-04-23 | Assisted with troubleshooting Costco data retrieval issues (datafmt filtering and deduplication logic) |
+| DeepSeek | Web | 2026-04-25 | Helped refine README documentation structure, Markdown formatting |
+
+All AI-generated suggestions were reviewed, tested, and modified by the author. The final code, analysis, interpretations, and documentation represent my own intellectual contribution and understanding. Specific modifications made to AI suggestions include:
+
+- Adjusting SQL query conditions to ensure all three companies' data were correctly retrieved
+- Modifying data deduplication logic to handle multiple data formats (STD vs SUMM_STD)
+- Customizing visualization parameters for clarity and professional presentation
+- Adapting reflection content to reflect personal learning experiences
 ________________________________________
-👤 Author
-•	Name: [Your Full Name]
-•	Student ID: [Your Student ID]
-•	Program: BA Accounting / BSc Economics and Finance – Year 2
-•	Course: ACC102 – Python for Business Analytics
-•	Institution: [Your University]
-•	Submission Date: [Submission Date]
+## 👤 Author
+-	Name: [Your Full Name]
+-	Student ID: [Your Student ID]
+-	Program: BA Accounting / BSc Economics and Finance – Year 2
+-	Course: ACC102 – Python for Business Analytics
+-	Institution: [Your University]
+-	Submission Date: [Submission Date]
 ________________________________________
-📜 License
+## 📜 License
 This project is submitted as part of an academic assignment and is licensed under the MIT License. See the LICENSE file for details.
 ________________________________________
-🙏 Acknowledgments
-•	WRDS (Wharton Research Data Services) for providing access to Compustat data
-•	Course instructors for guidance on Python and financial analysis methodologies
-•	Compustat data sourced from S&P Global Market Intelligence
+## 🙏 Acknowledgments
+-	WRDS (Wharton Research Data Services) for providing access to Compustat data
+-	Course instructors for guidance on Python and financial analysis methodologies
+-	Compustat data sourced from S&P Global Market Intelligence
 
 
