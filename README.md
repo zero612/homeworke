@@ -185,7 +185,7 @@ ________________________________________
 ________________________________________
 ## 📈 Sample Output
 ### Profitability Comparison (2025)
-<img width="4168" height="1192" alt="Image" src="https://github.com/user-attachments/assets/d085c0cd-4408-401c-8cf3-446c8f14d5c2" />
+<img width="4168" height="1192" alt="Image" src="https://github.com/user-attachments/assets/2803efdc-97b9-4007-824c-fcef4a9743da" />
 
 ### Multi-dimensional Radar Chart (2025)
 <img width="2848" height="2361" alt="Image" src="https://github.com/user-attachments/assets/f09580af-a5cb-4291-9dc3-e7b2d0ccb0c3" />
