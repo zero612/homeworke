@@ -95,84 +95,101 @@ us-retail-financial-analyzer
 
 ### Prerequisites
 
-- **Python 3.8** or higher
+- **Python 3.11** or higher
 - **WRDS account** with access to **Compustat North America** (Fundamentals Annual)
 - Git (for cloning the repository)
 
 ### Step 1: Clone the Repository
 
-```bash
-git clone (https://github.com/zero612/homeworke/edit/main/README.md)
+git clone https://github.com/zero612/homeworke.git
 
-###Step 2: Install Dependencies
+### Step 2: Install Dependencies
 
-bash
-pip install -r requirements.txt
 requirements.txt contains:
+
 text
+
 wrds>=3.1.0
+
 pandas>=1.3.0
+
 numpy>=1.21.0
+
 matplotlib>=3.4.0
+
 seaborn>=0.11.0
+
 jupyter>=1.0.0
-Step 3: Configure WRDS Connection
+
+### Step 3: Configure WRDS Connection
+
 The first time you run the code, you will be prompted to enter your WRDS username and password. After successful authentication, you will be asked whether to create a .pgpass file. Type y to save your credentials securely for future use.
 Note: Your institution must have an active WRDS subscription with Compustat North America access.
 ________________________________________
-📖 Usage
-Quick Start (Jupyter Notebook)
+## 📖 Usage
+### Quick Start (Jupyter Notebook)
 1.	Launch Jupyter Notebook:
 bash
 jupyter notebook
 2.	Open financial_analysis.ipynb
 3.	Run all cells sequentially (Cell → Run All)
 4.	The notebook will:
-o	Connect to WRDS and fetch data for WMT, COST, KR (2020–2024)
-o	Calculate all financial ratios
-o	Display summary tables
-o	Generate and display visualizations
-Customizing the Analysis
+
+  	 o	Connect to WRDS and fetch data for WMT, COST, KR (2020–2024)
+
+  	 o	Calculate all financial ratios
+
+  	 o	Display summary tables
+
+  	 o	Generate and display visualizations
+### Customizing the Analysis
 To analyze different companies or time periods, modify the parameters in the main execution cell:
+```
 python
 # Change tickers (any valid Compustat ticker)
 TICKERS = ['WMT', 'COST', 'KR', 'TGT', 'DG']
 
 # Change year range
 START_YEAR = 2018
-END_YEAR = 2024
-Running as a Python Script
-bash
-python src/financial_analysis.py
+END_YEAR = 202
+```
 ________________________________________
-📊 Financial Metrics Calculated
-1️⃣ Profitability
-Metric	Formula	Interpretation
-Gross Margin	(Revenue - COGS) / Revenue	Pricing power and cost control
-Net Margin	Net Income / Revenue	Overall profitability
-ROA	Net Income / Total Assets	Asset utilization efficiency
-ROE	Net Income / Total Equity	Return to shareholders
-2️⃣ Solvency
-Metric	Formula	Warning Threshold
-Current Ratio	Current Assets / Current Liabilities	< 1.5
-Quick Ratio	(Current Assets - Inventory) / Current Liabilities	< 1.0
-Debt-to-Assets	Total Liabilities / Total Assets	> 70%
-3️⃣ Efficiency
-Metric	Formula
-Inventory Turnover	COGS / Average Inventory
-Receivables Turnover	Revenue / Average Receivables
-Asset Turnover	Revenue / Average Total Assets
-4️⃣ Growth
-Metric	Formula
-Revenue Growth (YoY)	(Current Revenue - Prior Revenue) / Prior Revenue
-Net Income Growth (YoY)	(Current Net Income - Prior Net Income) / Prior Net Income
+## 📊 Financial Metrics Calculated
+### 1️⃣ Profitability
+|Metric|Formula|Interpretation|
+|:---|:---|:---|
+|Gross Margin|(Revenue - COGS) / Revenue|Pricing power and cost control|
+|Net Margin|Net Income / Revenue|Overall profitability|
+|ROA|Net Income / Total Assets|Asset utilization efficiency|
+|ROE|Net Income / Total Equity|Return to shareholders|
+
+### 2️⃣ Solvency
+|Metric|Formula|Warning Threshold|
+|:---|:---|:---|
+|Current Ratio|	Current Assets / Current Liabilities|	< 1.5|
+|Quick Ratio|	(Current Assets - Inventory) / Current Liabilities|	< 1.0|
+|Debt-to-Assets|	Total Liabilities / Total Assets|	> 70%|
+
+### 3️⃣ Efficiency
+|Metric|Formula|
+|:---|:---|
+|Inventory Turnover|	COGS / Average Inventory|
+|Receivables Turnover	|Revenue / Average Receivables|
+|Asset Turnover	|Revenue / Average Total Assets|
+
+### 4️⃣ Growth
+|Metric|Formula|
+|:---|:---|
+|Revenue Growth (YoY)|	(Current Revenue - Prior Revenue) / Prior Revenue|
+|Net Income Growth (YoY)|	(Current Net Income - Prior Net Income) / Prior Net Income|
 ________________________________________
-📈 Sample Output（去wrds里找真实数据）增加图片
-Profitability Comparison (2024)盈利能力对比
-https://images/profitability_comparison.png
-Multi-dimensional Radar Chart (2024)多维雷达图
-https://images/radar_chart.png
-Trend Analysis (Walmart)趋势分析
+## 📈 Sample Output
+### Profitability Comparison (2025)
+<img width="4168" height="1192" alt="Image" src="https://github.com/user-attachments/assets/d085c0cd-4408-401c-8cf3-446c8f14d5c2" />
+
+### Multi-dimensional Radar Chart (2025)
+<img width="2848" height="2361" alt="Image" src="https://github.com/user-attachments/assets/5bde345a-e1eb-44f5-b551-b979b6488cd0" />
+### Trend Analysis (Walmart)
 https://images/trend_wmt.png
 Summary Table (2024)
 Company	Gross Margin	Net Margin	ROE	Current Ratio	Debt-to-Assets	Inventory Turnover
