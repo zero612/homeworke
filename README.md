@@ -184,10 +184,10 @@ ________________________________________
 |Net Income Growth (YoY)|	(Current Net Income - Prior Net Income) / Prior Net Income|
 ________________________________________
 ## 📈 Sample Output
-### Profitability Comparison (2025)
+### Profitability Comparison (2024)
 <img width="4168" height="1192" alt="Image" src="https://github.com/user-attachments/assets/2803efdc-97b9-4007-824c-fcef4a9743da" />
 
-### Multi-dimensional Radar Chart (2025)
+### Multi-dimensional Radar Chart (2024)
 <img width="2848" height="2361" alt="Image" src="https://github.com/user-attachments/assets/f09580af-a5cb-4291-9dc3-e7b2d0ccb0c3" />
 
 ### Trend Analysis (Walmart)
@@ -196,10 +196,11 @@ ________________________________________
 <img width="4171" height="2957" alt="Image" src="https://github.com/user-attachments/assets/54ce182d-813e-47a2-8a37-4252c7cc2975" />
 
 ### Summary Table (2024)
-Company	Gross Margin	Net Margin	ROE	Current Ratio	Debt-to-Assets	Inventory Turnover
-Walmart	24.5%	3.2%	18.5%	0.85	67.3%	8.2x
-Costco	12.8%	2.9%	25.1%	0.98	62.1%	12.1x
-Kroger	22.1%	1.8%	16.3%	0.72	78.5%	14.3x
+|Company|	Gross Margin|	Net Margin|	ROE	|Current Ratio|	Debt-to-Assets|	Inventory Turnover|
+|:---|:---|:---|:---|:---|:---|:---|
+|Walmart|	25.93%|	2.4%|	18.5%|	0.83|	64.12%	|8.71x|
+|Costco|	13.49%|	2.9%|	31.19%| 0.97|	66.17%|	11.8x|
+|Kroger|	22.24%|	1.44%|	18.63%|	0.81|	77.03%|	16.42x|
 ________________________________________
 🔍 Key Insights（更改具体数值）
 Based on the 2020–2024 analysis:
