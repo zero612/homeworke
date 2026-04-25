@@ -191,8 +191,11 @@ ________________________________________
 <img width="2848" height="2361" alt="Image" src="https://github.com/user-attachments/assets/f09580af-a5cb-4291-9dc3-e7b2d0ccb0c3" />
 
 ### Trend Analysis (Walmart)
-https://images/trend_wmt.png
-Summary Table (2024)
+<img width="4171" height="2957" alt="Image" src="https://github.com/user-attachments/assets/941ec214-fa09-4b76-97ac-da7a69671c42" />
+<img width="4171" height="2957" alt="Image" src="https://github.com/user-attachments/assets/f14b9bf8-55ea-4ba5-b7db-ab9c23d881ec" />
+<img width="4171" height="2957" alt="Image" src="https://github.com/user-attachments/assets/54ce182d-813e-47a2-8a37-4252c7cc2975" />
+
+### Summary Table (2024)
 Company	Gross Margin	Net Margin	ROE	Current Ratio	Debt-to-Assets	Inventory Turnover
 Walmart	24.5%	3.2%	18.5%	0.85	67.3%	8.2x
 Costco	12.8%	2.9%	25.1%	0.98	62.1%	12.1x
