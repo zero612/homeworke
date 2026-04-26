@@ -2,11 +2,6 @@
 
 > A Python-based financial health assessment tool comparing Walmart, Costco, and Kroger using WRDS Compustat data.
 
-[![Python Version]
-
-[![License]
-
-[![WRDS]
 ## 📌 Project Overview
 
 This project is a **small data product** developed for the ACC102 Mini Assignment (Track 2 – GitHub Data Analysis Project). It provides an automated financial health assessment of three major U.S. retail companies:
@@ -36,60 +31,6 @@ The tool retrieves **real financial statement data** from the **WRDS Compustat N
 | 📈 **Multi-dimensional Visualization** | Generates bar charts, radar charts, and trend analysis for intuitive comparison |
 | 🏆 **Composite Scoring** | Produces normalized rankings of overall financial health |
 | 🔄 **Reproducible Workflow** | Fully modular code that can be rerun with different tickers or year ranges |
-
----
-
-## 📁 Repository Structure
-us-retail-financial-analyzer
-
-
-├── README.md # Project documentation (this file)
-
-├── requirements.txt # Python dependencies
-
-├── .gitignore # Git ignore rules
-
-
-
-├── financial_analysis.ipynb # Main Jupyter Notebook (full analysis)
-
-
-
-├── src/ # Modular Python scripts
-
-│ ├── data_loader.py # WRDS data retrieval module
-
-│ ├── ratio_engine.py # Financial ratio calculation engine
-
-│ └── visualizer.py # Visualization module
-
-
-
-├── images/ # Output visualizations
-
-│ ├── profitability_comparison.png # Profitability bar chart
-
-│ ├── radar_chart.png # Multi-dimensional radar chart
-
-│ ├── trend_wmt.png # Walmart trend analysis
-
-│ ├── trend_cost.png # Costco trend analysis
-
-│ └── trend_kr.png # Kroger trend analysis
-
-
-
-├── data/ # Sample output data
-
-│ └── financial_ratios_2024.csv # Calculated ratios for latest year
-
-
-
-└── video/
-
-└── demo_video.mp4 # 1-3 minute demonstration video
-
----
 
 ## 🔧 Installation & Setup
 
@@ -252,33 +193,6 @@ ________________________________________
 -	Expand to full retail sector using SIC/NAICS codes
 -	Incorporate Altman Z-score for bankruptcy risk assessment
 -	Develop Streamlit web interface for interactive exploration
-________________________________________
-## 📹 Demo Video
-A 1–3 minute demonstration video is available in the video/ folder
-**🔗 Watch Demo Video**
-**The video covers**:
--	Overview of the GitHub repository structure
--	Running the Jupyter Notebook
--	Key visualizations and insights
-________________________________________
-## 📄 AI Use Disclosure
-
-In accordance with the ACC102 assignment requirements, the following AI tools were used in the development of this project:
-
-| Tool | Version | Access Date | Purpose |
-|:---|:---|:---|:---|
-| DeepSeek | Web | 2026-04-18 | Assisted with WRDS SQL query syntax, Compustat field mapping, and overall code structure planning |
-| DeepSeek | Web | 2026-04-19 | Helped debug Jupyter Notebook display issues and image saving configuration |
-| DeepSeek | Web | 2026-04-22 | Provided guidance on financial ratio calculation logic and data visualization design |
-| DeepSeek | Web | 2026-04-23 | Assisted with troubleshooting Costco data retrieval issues (datafmt filtering and deduplication logic) |
-| DeepSeek | Web | 2026-04-25 | Helped refine README documentation structure, Markdown formatting |
-
-All AI-generated suggestions were reviewed, tested, and modified by the author. The final code, analysis, interpretations, and documentation represent my own intellectual contribution and understanding. Specific modifications made to AI suggestions include:
-
-- Adjusting SQL query conditions to ensure all three companies' data were correctly retrieved
-- Modifying data deduplication logic to handle multiple data formats (STD vs SUMM_STD)
-- Customizing visualization parameters for clarity and professional presentation
-- Adapting reflection content to reflect personal learning experiences
 ________________________________________
 ## 👤 Author
 -	Name: Jiayi Chen
